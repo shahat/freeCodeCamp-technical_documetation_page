@@ -1,0 +1,137 @@
+:root {
+  --common-color: rgb(245, 246, 247);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(27, 27, 50);
+  color: var(--common-color);
+}
+/* start nav-bar  */
+#navbar {
+  position: fixed;
+  width: 20vw;
+  float: left;
+  border-right: 4px solid rgb(75, 75, 75);
+}
+.nav-bar * {
+  background-color: rgb(10, 10, 35);
+  color: var(--common-color);
+}
+#navbar header {
+  height: 20vh;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 40px 20px 0 20px;
+  word-wrap: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#navbar ul {
+  overflow: scroll;
+  width: 100%;
+  height: 80vh;
+  font-size: 1rem;
+}
+#navbar ul li {
+  text-align: left;
+  list-style: none;
+  display: block;
+  padding: 10px;
+  padding-left: 20px;
+  width: 100%;
+  border-bottom: 1px solid rgba(212, 211, 211, 0.5);
+}
+#navbar ul li:last-child {
+  border: none;
+}
+#navbar ul li:hover a {
+  color: orange;
+  padding-left: 5px;
+  transition: 0.5s;
+}
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--common-color);
+}
+/* End the nav   */
+/*  start the main section  */
+#main-doc {
+  max-width: 80vw;
+  padding-left: 40px;
+  float: right;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+/* into section start*/
+.main-section {
+  max-width: 95%;
+  margin-top: 50px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgba(212, 211, 211, 0.5);
+}
+.main-section .pt-100 {
+  padding-top: 20px;
+}
+.main-section p {
+  padding-top: 30px;
+}
+.main-section ul {
+  padding-top: 20px;
+  margin-left: 50px;
+}
+.main-section ul li {
+  padding-top: 10px;
+}
+.main-section code {
+  display: block;
+  font-family: monospace;
+  background-color: rgba(14, 14, 14, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+  word-wrap: wrap;
+  color: aliceblue;
+  border-radius: 5px;
+}
+@media (max-width: 720px) {
+  .placeholder {
+    width: 100%;
+    height: 30vh;
+  }
+  #navbar {
+    position: static;
+    width: 100%;
+    height: 10vh;
+  }
+  #main-doc {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  #navbar ul {
+    overflow: scroll;
+    width: 100%;
+    height: 20vh;
+    font-size: 1rem;
+  }
+  #navbar header {
+    /* background-color: antiquewhite;  */
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  #main-doc {
+    max-width: 80vw;
+    padding: 0;
+    margin: 0;
+    float: none;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
